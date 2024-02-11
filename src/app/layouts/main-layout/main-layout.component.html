@@ -1,0 +1,21 @@
+<body>
+    <div class="page-topbar">
+      <app-top-nav-bar #topNavbar></app-top-nav-bar>
+    </div>
+    <div class="page-container row-fluid">
+      <div class="page-sidebar" [ngClass]="{'collapseit':menuFolded,'expandit':!menuFolded}">
+        <app-side-nav-bar></app-side-nav-bar>
+      </div>
+      <section id="main-content" #maincontent [ngClass]="{'sidebar_shift':menuFolded}">
+        <div class="pull-left
+        mobile-pagetitle">
+          <h1 class="ng-binding">Account Management</h1>
+        </div>
+        <section class="wrapper main-wrapper">
+          <div class="content-wrapper" id="content-wrapper">
+            <router-outlet></router-outlet>
+          </div>
+        </section>
+      </section>
+    </div>
+  </body>
