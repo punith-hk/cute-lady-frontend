@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    overflow: visible !important;
+}
+
+/* .mat-mdc-snack-bar-container {
+    --mat-mdc-snack-bar-button-color: rgba(255, 255, 255, 0.87) !important;
+    --mdc-snackbar-container-color: green !important;
+    --mdc-snackbar-supporting-text-color: rgba(255, 255, 255, 0.87) !important;
+} */
+
+.success-snackbar {
+    --mdc-snackbar-container-color: #27c24c !important;
+    --mdc-snackbar-supporting-text-color: white !important;
+    --mat-mdc-snack-bar-button-color: rgba(255, 255, 255, 0.87) !important;
+
+}
+
+.danger-snackbar {
+    --mdc-snackbar-container-color: #f05050 !important;
+    --mdc-snackbar-supporting-text-color: white !important;
+    --mat-mdc-snack-bar-button-color: rgba(255, 255, 255, 0.87) !important;
+
+}
+
+.warning-snackbar {
+    --mdc-snackbar-container-color: orange !important;
+    --mdc-snackbar-supporting-text-color: white !important;
+    --mat-mdc-snack-bar-button-color: rgba(255, 255, 255, 0.87) !important;
+
+}
+
+::-webkit-input-placeholder {
+    /* Edge */
+    font-size: 13px;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer */
+    font-size: 13px;
+}
+
+::placeholder {
+    font-size: 13px;
+}
+
+.text-primary {
+    color: #337ab7 !important;
+}
+
+input {
+    font-size: 13px !important;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
